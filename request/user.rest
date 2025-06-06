@@ -1,0 +1,57 @@
+### Hacer signup (registro de usuario)
+POST http://localhost:3000/api/users/signup
+Content-Type: application/json
+
+{
+    "username": "Ángel",
+    "email": "angel@gmail.com",
+    "password": "angel"
+}
+
+### Hacer login OK con usuario existente y role user
+
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "juan@gmail.com",
+    "password": "juan"
+}
+
+### Hacer login OK con usuario existente y role admin
+
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "manuel@gmail.com",
+    "password": "manuel"
+}
+    
+### Hacer login con usuario no existente
+
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "juanillo@gmail.com",
+    "password": "juan"
+}
+
+### Hacer login con password incorrecta
+
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "juan@gmail.com",
+    "password": "juanillo"
+}
+
+### Hacer logout
+
+POST http://localhost:3000/api/users/logout
+
+
+### Obtener todos los usuarios (necesita autenticación previa)
+GET http://localhost:3000/api/users/

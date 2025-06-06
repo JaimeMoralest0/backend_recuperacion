@@ -1,0 +1,5 @@
+### Recuperar los pedidos (necesita autenticación)
+GET http://localhost:3000/api/pedidos
+
+### Recuperar los datos de pedidos para la gráfica (necesita autenticación)
+GET http://localhost:3000/api/pedidos/grafica 
